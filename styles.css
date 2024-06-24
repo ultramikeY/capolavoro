@@ -74,16 +74,20 @@ h1, h2 {
   
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   position: relative;
   padding: 12px 35px;
-  background: #fec195;
+  background: #00d9ff;
   font-size: 17px;
   font-weight: 600;
   color: #fff;
-  border: 3px solid #fec195;
+  border: 3px solid #00d9ff;
   border-radius: 19px;
-  box-shadow: 0 0 0 #fec1958c;
+  box-shadow: 0 0 0 #40b3ff8c;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -94,7 +98,7 @@ button {
   left: 20%;
   width: 25px;
   height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
+  filter: drop-shadow(0 0 0 #00d9ff);
   z-index: -5;
   transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
 }
@@ -105,7 +109,7 @@ button {
   left: 45%;
   width: 15px;
   height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
+  filter: drop-shadow(0 0 0 #00d9ff);
   z-index: -5;
   transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
 }
@@ -116,7 +120,7 @@ button {
   left: 40%;
   width: 5px;
   height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
+  filter: drop-shadow(0 0 0 #00d9ff);
   z-index: -5;
   transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
 }
@@ -127,7 +131,7 @@ button {
   left: 40%;
   width: 8px;
   height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
+  filter: drop-shadow(0 0 0 #00d9ff);
   z-index: -5;
   transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
 }
@@ -138,7 +142,7 @@ button {
   left: 45%;
   width: 15px;
   height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
+  filter: drop-shadow(0 0 0 #00d9ff);
   z-index: -5;
   transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
 }
@@ -149,15 +153,15 @@ button {
   left: 50%;
   width: 5px;
   height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
+  filter: drop-shadow(0 0 0 #00d9ff);
   z-index: -5;
   transition: all 0.8s ease;
 }
 
 button:hover {
   background: transparent;
-  color: #fec195;
-  box-shadow: 0 0 25px #fec1958c;
+  color: #00d9ff;
+  box-shadow: 0 0 25px #40b3ff8c;
 }
 
 button:hover .star-1 {
@@ -166,7 +170,7 @@ button:hover .star-1 {
   left: -30%;
   width: 25px;
   height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
+  filter: drop-shadow(0 0 10px #00d9ff);
   z-index: 2;
 }
 
@@ -176,7 +180,7 @@ button:hover .star-2 {
   left: 16%;
   width: 15px;
   height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
+  filter: drop-shadow(0 0 10px #00d9ff);
   z-index: 2;
 }
 
@@ -186,7 +190,7 @@ button:hover .star-3 {
   left: 2%;
   width: 5px;
   height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
+  filter: drop-shadow(0 0 10px #00d9ff);
   z-index: 2;
 }
 
@@ -196,7 +200,7 @@ button:hover .star-4 {
   left: 75%;
   width: 8px;
   height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
+  filter: drop-shadow(0 0 10px #00d9ff);
   z-index: 2;
 }
 
@@ -206,7 +210,7 @@ button:hover .star-5 {
   left: 115%;
   width: 15px;
   height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
+  filter: drop-shadow(0 0 10px #00d9ff);
   z-index: 2;
 }
 
@@ -216,10 +220,25 @@ button:hover .star-6 {
   left: 60%;
   width: 5px;
   height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
+  filter: drop-shadow(0 0 10px #00d9ff);
   z-index: 2;
 }
 
 .fil0 {
   fill: #fffdef;
+}
+
+/* #quantity {
+  display: flex;
+  align-items: center;
+}
+
+#buy {
+  display: flex;
+  align-items: center;
+} */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,0 +1,78 @@
+#quantity {
+    display: flex;
+    padding: 20px 20px;
+    border: 3px rgb(76, 133, 185);
+    border-radius: 4px;
+}
+
+#add {
+    display: flex;
+    /* position: relative; */
+    justify-content: center;
+    padding: 12px 35px;
+    background: #00d9ff;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    border: 3px solid #00d9ff;
+    border-radius: 19px;
+    box-shadow: 0 0 0 #40b3ff8c;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#buy {
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    padding: 20px 40px;
+    background: #00d9ff;
+    font-size: 32px;
+    font-weight: 650;
+    color: #fff;
+    border: 3px solid #00d9ff;
+    border-radius: 19px;
+    box-shadow: 0 0 0 #40b3ff8c;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #008299;
+    overflow: hidden;
+}
+
+nav.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #008299;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #006da0;
+}
+
+h1, h3, h5 {
+    text-align: center;
+    font-weight: 500;
+}
