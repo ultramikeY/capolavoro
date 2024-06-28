@@ -1,30 +1,29 @@
 <?php
-// Connessione al database
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ClientiDB";
+$username = "tuo_username_db";
+$password = "tua_password_db";
+$dbname = "tuo_database";
 
+// Crea connessione
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verifica la connessione
+// Controlla connessione
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Ottieni i dati dal corpo della richiesta
-$data = json_decode(file_get_contents("php://input"), true);
-$nome = $data["Nome"];
-$cognome = $data["Cognome"];
-$dataNascita = $data["DataNascita"];
+// Preleva i dati dal form
+$user = $_POST['username'];
+$email = $_POST['email'];
+$pass = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
-// Inserisci i dati nella tabella
-$sql = "INSERT INTO Cliente (Nome, Cognome, DataNascita) VALUES ('$nome', '$cognome', '$dataNascita')";
+// Prepara e esegui l'insert
+$sql = "INSERT INTO users (username, email, password) VALUES ('$user', '$email', '$pass')";
 
 if ($conn->query($sql) === TRUE) {
-    echo json_encode(["message" => "Record inserito con successo"]);
+    echo "Registrazione avvenuta con successo";
 } else {
-    echo json_encode(["error" => "Errore: " . $sql . "<br>" . $conn->error]);
+    echo "Errore: " . $sql . "<br>" . $conn->error;
 }
 
 $conn->close();

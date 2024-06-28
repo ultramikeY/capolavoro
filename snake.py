@@ -21,3 +21,19 @@ headers = {'Content-Type': 'application/json'}
 response = requests.post(url, data=json.dumps(data), headers=headers)
 
 print(response.json())
+
+ function registerUser() {
+            let formData = new FormData(document.getElementById('registrationForm'));
+
+            fetch('register.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
