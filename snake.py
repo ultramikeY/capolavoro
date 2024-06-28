@@ -1,13 +1,23 @@
-from fastapi import FastAPIù
-import random
-app = FastAPI()
+import requests
+import json
 
-@app.get('/')
-async def root():
-    return {
-        'example': 'this is an example', 'data': 0
-    }
+url = "http://127.0.0.1:5500/capolavoro/getlogin.html?#"
 
-@app.get('/random')
-async def get_random()
-    rn
+data = {
+    "Nome": "Erminio",
+    "Cognome":"Ottone",
+    "Data_nascita":"1994-10-04",
+    "email":"niagara66@craiglist.com"
+}
+{
+    "Nome": "Luffy",
+    "Cognome":"D. Onepis",
+    "Data_nascita":"199X-01-01",
+    "email":"ulysse@gmail.com"
+}
+
+headers = {'Content-Type': 'application/json'}
+
+response = requests.post(url, data=json.dumps(data), headers=headers)
+
+print(response.json())
